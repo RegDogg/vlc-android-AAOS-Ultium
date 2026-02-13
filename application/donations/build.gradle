@@ -63,7 +63,7 @@ android {
             matchingFallbacks = ['release']
         }
     }
-    namespace = 'org.videolan.vlc.donations'
+    namespace = 'com.RegDogg.vlc.donations'
     buildFeatures {
         aidl = true
         buildConfig = true

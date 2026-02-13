@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = 'org.videolan.vlc.remoteaccessserver'
+    namespace = 'com.RegDogg.vlc.remoteaccessserver'
 
     dataBinding {
         enabled = true

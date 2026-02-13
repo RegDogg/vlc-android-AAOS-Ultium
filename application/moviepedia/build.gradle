@@ -43,7 +43,7 @@ android {
             matchingFallbacks = ['release']
         }
     }
-    namespace = 'org.videolan.moviepedia'
+    namespace = 'com.RegDogg.moviepedia'
     buildFeatures {
         buildConfig = true
     }

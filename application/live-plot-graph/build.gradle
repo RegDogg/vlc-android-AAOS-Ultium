@@ -44,7 +44,7 @@ android {
             matchingFallbacks = ['release']
         }
     }
-    namespace = 'org.videolan.liveplotgraph'
+    namespace = 'com.RegDogg.liveplotgraph'
     buildFeatures {
         buildConfig = true
     }
