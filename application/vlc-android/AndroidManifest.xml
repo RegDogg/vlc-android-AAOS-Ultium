@@ -951,6 +951,10 @@
 
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
         </activity>
         <activity
             android:name=".gui.MainActivity"
@@ -962,55 +966,134 @@
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable"/>
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
         </activity>
         <activity
             android:name=".gui.onboarding.OnboardingActivity"
-            android:theme="@style/Theme.VLC.Onboarding"/>
+            android:theme="@style/Theme.VLC.Onboarding">
+
+        <meta-data
+            android:name="distractionOptimized"
+            android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.SecondaryActivity"
             android:theme="@style/Theme.VLC"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.HeaderMediaListActivity"
-            android:theme="@style/Theme.VLC.NoStatus"/>
+            android:theme="@style/Theme.VLC.NoStatus">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.InfoActivity"
-            android:theme="@style/Theme.VLC.NoStatus"/>
+            android:theme="@style/Theme.VLC.NoStatus">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.LibrariesActivity"
-            android:theme="@style/Theme.VLC"/>
+            android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.EqualizerSettingsActivity"
-            android:theme="@style/Theme.VLC"/>
+            android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.PinCodeActivity"
             android:theme="@style/Theme.VLC"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
                 android:name=".gui.OTPCodeActivity"
-                android:theme="@style/Theme.VLC"/>
+                android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.AuthorsActivity"
-            android:theme="@style/Theme.VLC"/>
+            android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.FeedbackActivity"
-            android:theme="@style/Theme.VLC"/>
+            android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
                 android:name=".gui.SearchActivity"
                 android:theme="@style/Theme.VLC"
-                android:windowSoftInputMode="stateVisible" />
+                android:windowSoftInputMode="stateVisible" >
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.BetaWelcomeActivity"
-            android:theme="@style/Theme.VLC.SendCrashDialog"/>
+            android:theme="@style/Theme.VLC.SendCrashDialog">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.browser.FilePickerActivity"
-            android:theme="@style/Theme.VLC.PickerDialog"/>
+            android:theme="@style/Theme.VLC.PickerDialog">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.preferences.PreferencesActivity"
-            android:theme="@style/Theme.VLC"/>
+            android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.preferences.search.PreferenceSearchActivity"
-            android:theme="@style/Theme.VLC"/>
+            android:theme="@style/Theme.VLC">
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <activity
             android:name=".gui.video.VideoPlayerActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|uiMode|keyboard|keyboardHidden|navigation"
@@ -1027,12 +1110,20 @@
             <meta-data android:name="com.samsung.android.support.REMOTE_ACTION"
                 android:resource="@xml/air_actions"/>
 
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
         </activity>
         <activity
             android:name=".gui.DialogActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/VLCTransparentTheme"
-            android:label="" />
+            android:label="" >
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
 
         <activity
                 android:name=".widget.MiniPlayerConfigureActivity"
@@ -1045,6 +1136,10 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
         </activity>
 
         <service
@@ -1123,7 +1218,12 @@
             android:launchMode="singleInstance"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.VLC.Player"
-            tools:ignore="LockedOrientationActivity" /> <!-- TV components -->
+            tools:ignore="LockedOrientationActivity" > <!-- TV components -->>
+
+        <meta-data
+            android:name="distractionOptimized"
+            android:value="true"/>
+        </activity>
 
         <service
             android:name=".RecommendationsService"
@@ -1190,7 +1290,12 @@
 
         <activity android:name=".gui.DebugLogActivity"
                 android:theme="@style/Theme.VLC"
-                android:launchMode="singleTop" />
+                android:launchMode="singleTop" >
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
         <service android:name=".DebugLogService"
                 android:process=":logger"
                 android:foregroundServiceType="dataSync" />
