@@ -34,6 +34,8 @@
     <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
     <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.car.permission.CAR_DRIVING_STATE"/>
+    <uses-permission android:name="android.car.permission.CAR_UX_RESTRICTIONS_CONFIGURATION"/>
 
     <!-- Custom permissions for our content provider -->
     <permission
@@ -55,6 +57,12 @@
     <uses-feature
         android:name="android.hardware.bluetooth"
         android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true"/>
 
     <queries>
         <intent>
