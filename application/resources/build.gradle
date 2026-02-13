@@ -48,7 +48,7 @@ android {
     sourceSets.dev {
         res.srcDirs = ['flavors/debug/res']
     }
-    namespace = 'com.RegDogg.resources'
+    namespace = 'org.videolan.resources'
     buildFeatures {
         buildConfig = true
     }

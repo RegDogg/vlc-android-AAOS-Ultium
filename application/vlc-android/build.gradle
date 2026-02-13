@@ -114,7 +114,7 @@ android {
         assets.srcDirs = ['flavors/debug/assets']
         assets.srcDirs += files("$projectDir/assets/schemas".toString())
     }
-    namespace = 'com.RegDogg.vlc'
+    namespace = 'org.videolan.vlc'
     buildFeatures {
         renderScript = true
         aidl = true

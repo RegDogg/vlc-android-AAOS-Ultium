@@ -36,7 +36,7 @@ android {
             matchingFallbacks = ['release']
         }
     }
-    namespace = 'com.RegDogg.television'
+    namespace = 'org.videolan.television'
 
 }
 

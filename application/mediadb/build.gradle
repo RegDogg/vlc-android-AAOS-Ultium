@@ -55,7 +55,7 @@ android {
             matchingFallbacks = ['release']
         }
     }
-    namespace = 'com.RegDogg.vlc.mediadb'
+    namespace = 'org.videolan.vlc.mediadb'
 
 }
 

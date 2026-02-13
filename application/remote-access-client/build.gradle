@@ -33,7 +33,7 @@ ext {
 }
 
 android {
-    namespace = 'com.RegDogg.vlc.remoteaccessclient'
+    namespace = 'org.videolan.vlc.remoteaccessclient'
 
     defaultConfig {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
